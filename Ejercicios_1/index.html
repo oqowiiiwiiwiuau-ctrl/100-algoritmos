@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suma de Enteros de 32 Bits</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Calculadora de Suma con Límite de 32 Bits</h1>
+    
+    <div class="intro-history">
+        <h2>El problema de 2^32</h2>
+        <p>
+            Ahora verás por qué el problema de 2 elevado a 32 era tan importante, un desafío que los ingenieros de software, especialmente de la India, ayudaron a resolver.
+        </p>
+        <p>
+            El 'problema de 2^32' se hizo famoso a fines de los años 90 y principios de los 2000, cuando los sistemas informáticos de 32 bits eran el estándar. El principal desafío era que el tiempo en las computadoras se medía en segundos desde una fecha específica, y se almacenaba en una variable de 32 bits. Este sistema tenía un límite: 2^32 segundos (o 2^31 para números con signo), lo que llevaría a un **desbordamiento** o **'overflow'** en un momento determinado. Este problema se conoció como el **'Problema del Año 2038'**, ya que en esa fecha, los sistemas de 32 bits dejarían de funcionar correctamente, volviendo a un número negativo o cero y causando fallos masivos.  La industria del software de la India, que en ese momento estaba en rápido crecimiento, jugó un papel crucial en la transición global a sistemas de 64 bits y en el desarrollo de soluciones para mitigar este riesgo, demostrando su capacidad e importancia a nivel mundial.
+        </p>
+    </div>
+
+    <h2>Ingresa dos números y ve cómo se comportan al superar el límite de 32 bits.</h2>
+    <div>
+        <input id="primerElemento" type="text" placeholder="Ingresa tu primer valor">
+        <input id="segundoElemento" type="text" placeholder="Ingresa tu segundo valor">
+        <button id="button">Sumar</button>
+    </div>
+    <h2 id="print"></h2>
+    <h3 id="explicacion"></h3>
+    <script src="app.js"></script>
+</body>
+</html>

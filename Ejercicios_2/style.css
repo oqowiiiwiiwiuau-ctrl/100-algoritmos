@@ -1,0 +1,110 @@
+/* Paleta de colores y fuentes para un estilo antiguo y caligráfico */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-bg: #F5EFE6; /* Color pergamino o papel antiguo */
+    --color-text: #4A3A2A; /* Tinta marrón oscuro, casi negro */
+    --color-accent: #B8860B; /* Dorado o bronce para los acentos */
+    --font-handwriting: 'Tangerine', cursive; /* Fuente para los títulos, caligráfica */
+    --font-body: 'Cormorant Garamond', serif; /* Fuente para el cuerpo, elegante y legible */
+}
+
+/* El cuerpo simula un pergamino antiguo */
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    border: 5px solid var(--color-accent);
+    border-image: url('https://i.imgur.com/8QdY17X.png') 30 round; /* Borde con textura de adorno barroco */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+    line-height: 1.6;
+}
+
+/* Títulos con estilo caligráfico y sombra para un efecto 3D */
+h1, h2 {
+    font-family: var(--font-handwriting);
+    font-weight: 700;
+    color: var(--color-accent);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 4rem;
+    text-transform: capitalize;
+}
+
+h2 {
+    font-size: 2rem;
+    font-style: italic;
+    color: var(--color-text);
+}
+
+/* Contenedores con un marco más ornamentado */
+div {
+    border: 2px solid var(--color-accent);
+    padding: 20px;
+    margin-top: 25px;
+    background-color: rgba(255, 255, 255, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Campos de entrada y botones con un diseño más formal */
+input[type="text"] {
+    background-color: transparent;
+    border: 1px solid var(--color-text);
+    color: var(--color-text);
+    padding: 10px;
+    margin: 8px;
+    outline: none;
+    font-family: var(--font-body);
+}
+
+input[type="text"]:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px var(--color-accent);
+}
+
+button {
+    background-color: var(--color-accent);
+    border: none;
+    color: var(--color-bg);
+    padding: 12px 25px;
+    margin: 8px;
+    cursor: pointer;
+    font-family: var(--font-body);
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #DAA520; /* Tono de oro más claro */
+}
+
+/* Estilos para el texto de sugerencia y resultados */
+::placeholder {
+    color: #8C755E;
+    opacity: 1;
+}
+
+#print, #explicacion {
+    font-size: 1.2rem;
+    font-style: italic;
+    color: var(--color-text);
+    text-align: center;
+    margin-top: 20px;
+}
+
+.intro-history {
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 20px;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}

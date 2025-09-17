@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Problema 6</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div class="container">
+        <h1>La Importancia de la Suma, Resta y Producto</h1>
+        <p>
+            La suma, la resta y el producto no son solo operaciones matemáticas; son la base sobre la que se construyeron civilizaciones y la tecnología moderna. Su historia está ligada a la necesidad humana de contar, medir y comerciar.
+        </p>
+
+        <h3>Historia y Contexto</h3>
+        <p>
+            Desde las primeras civilizaciones como la babilónica y la egipcia, estas operaciones fueron cruciales. La **suma** y la **resta** se usaban para la contabilidad, el registro de cosechas y el comercio. El **producto** fue vital para tareas más complejas, como calcular áreas para la construcción o predecir los movimientos celestes para la agricultura y la navegación. Estos conceptos evolucionaron y se formalizaron, permitiendo el avance de la ciencia y la ingeniería.
+        </p>
+
+        <h3>Cómo lo Hace una Computadora</h3>
+        <p>
+            A pesar de su complejidad, una computadora solo puede hacer una cosa fundamentalmente: **sumar**. Su cerebro, la Unidad Lógico-Aritmética (ALU), está diseñado para realizar sumas con números binarios (ceros y unos).
+        </p>
+        <ul>
+            <li>
+                <strong>Resta:</strong> La computadora convierte la resta en una suma. Por ejemplo, para $10 - 5$, suma $10$ con el valor negativo de $5$. Utiliza una técnica llamada <em>complemento a dos</em> para representar números negativos en binario.
+            </li>
+            <li>
+                <strong>Multiplicación:</strong> Un producto como $5 \times 4$ es descompuesto en una serie de sumas repetidas: $5 + 5 + 5 + 5$. La máquina simplemente repite el proceso de suma.
+            </li>
+            <li>
+                <strong>División:</strong> Se reduce a una serie de restas repetidas. Para dividir $20$ entre $4$, la computadora resta $4$ de $20$ hasta que el resultado sea cero o menor, y cuenta cuántas veces lo hizo.
+            </li>
+        </ul>
+        <p>
+            En resumen, las computadoras descomponen cualquier operación compleja hasta su forma más simple: la suma, demostrando que esta operación es, en esencia, el pilar de toda la computación matemática.
+        </p>
+        
+        <hr>
+
+        <h2>Problema 6</h2>
+        <h2>Ingresar dos números enteros positivos y calcular la suma, resta, producto.</h2>
+        <div>
+            <input id="primero" type="text" placeholder="Ingrese el primer valor">
+            <input id="segundo" type="text" placeholder="Ingresa el segundo valor">
+            <button id="button">Enviar</button>
+        </div>
+        <h2 id="print">Resultado:</h2>
+        <h2 id="print2"></h2>
+        <h2 id="print3"></h2>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

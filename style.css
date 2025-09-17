@@ -1,0 +1,118 @@
+/* Importamos las fuentes de caligrafía y estilo antiguo de Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color-bg: #F5EFE6; /* Tono de papel de pergamino */
+    --color-text: #4A3A2A; /* Tinta marrón oscuro */
+    --color-accent: #8B4513; /* Marrón siena para acentos y bordes */
+    --font-handwriting: 'Tangerine', cursive; /* Fuente para títulos, como escritura a mano */
+    --font-body: 'Cormorant Garamond', serif; /* Fuente elegante y legible para el cuerpo */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    border: 5px solid var(--color-accent);
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2) inset;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Títulos con estilo caligráfico */
+h1 {
+    font-family: var(--font-handwriting);
+    font-weight: 700;
+    font-size: 4rem;
+    color: var(--color-accent);
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin: 0;
+}
+
+h2 {
+    font-family: var(--font-body);
+    font-size: 2rem;
+    color: var(--color-text);
+    font-weight: 500;
+}
+
+p {
+    font-size: 1.1rem;
+    font-style: italic;
+}
+
+main {
+    width: 100%;
+    max-width: 800px;
+    margin: auto;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 30px;
+    border: 2px solid var(--color-accent);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav li {
+    margin: 15px 0;
+    padding-bottom: 5px;
+    border-bottom: 1px dashed var(--color-accent);
+}
+
+/* Estilo para los enlaces de los proyectos */
+nav a {
+    text-decoration: none;
+    color: var(--color-text);
+    font-size: 1.2rem;
+    display: block;
+    padding: 5px;
+    transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+nav a:hover {
+    color: var(--color-accent);
+    background-color: rgba(139, 69, 19, 0.1);
+    text-decoration: underline;
+}
+
+strong {
+    color: var(--color-accent);
+    font-weight: 700;
+}
+
+footer {
+    text-align: center;
+    margin-top: 40px;
+    width: 100%;
+    max-width: 800px;
+}
+
+footer hr {
+    border: none;
+    height: 1px;
+    background-color: var(--color-accent);
+    margin: 20px 0;
+}
+
+footer ul {
+    list-style-type: '• ';
+    padding-left: 20px;
+}
+
+footer li {
+    font-style: italic;
+}

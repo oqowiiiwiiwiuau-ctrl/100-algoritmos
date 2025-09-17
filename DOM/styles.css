@@ -1,0 +1,102 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif; /* Fuente limpia y moderna */
+    background-color: #f4f7fa; /* Fondo suave */
+    color: #333; /* Texto oscuro para buena legibilidad */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column; /* Apilamos el contenido */
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título centrado en la parte superior */
+#titulo {
+    font-size: 30px;
+    color: #003366; /* Azul oscuro */
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 400px;
+    text-align: center;
+}
+
+/* Títulos */
+h2 {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para las etiquetas de los inputs */
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Estilo para los inputs */
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box; /* Incluye el padding y el borde en el tamaño total */
+}
+
+/* Botón de calcular */
+button {
+    background-color: #007bff; /* Color azul atractivo */
+    color: white;
+    padding: 12px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3; /* Efecto hover para el botón */
+}
+
+/* Estilos para el resultado */
+.resultado {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #007bff; /* Color azul para resaltar el resultado */
+}
+
+/* Mensaje de error */
+.error {
+    color: red;
+    font-weight: normal;
+}
+
+/* Estilos para el contenedor de los campos de entrada */
+.formulario {
+    margin-bottom: 20px;
+}
+hr {
+    border: 0;
+    height: 2px;
+    background-color: #101a25; /* Cambia el color */
+    margin: 30px 0; /* Espaciado superior e inferior */
+}
+.Ver_resultado_34{
+    background-color: #0056b3;
+}

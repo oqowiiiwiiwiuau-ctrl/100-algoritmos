@@ -1,0 +1,108 @@
+/* Importamos la fuente que evoca la caligrafía asiática */
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap');
+
+:root {
+    /* Paleta de colores inspirada en la estética japonesa */
+    --color-bg: #F9F7F0; /* Fondo de papel de arroz, claro y suave */
+    --color-text: #4F4F4F; /* Tinta de carbón, gris oscuro */
+    --color-accent: #A52A2A; /* Un rojo sutil, como el sello de un artista */
+    --color-border: #DCDCDC; /* Gris claro para bordes limpios */
+    
+    /* Fuentes para un toque asiático */
+    --font-heading: 'Zhi Mang Xing', cursive; /* Fuente para títulos, con toque de pincel */
+    --font-body: 'Noto Sans JP', sans-serif; /* Fuente principal, limpia y legible */
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    font-weight: 400;
+    color: var(--color-accent);
+    text-align: center;
+    border-bottom: 2px solid var(--color-border);
+    padding-bottom: 10px;
+}
+
+/* Subtítulos */
+h2 {
+    font-family: var(--font-heading);
+    font-size: 1.5em;
+    font-weight: 400;
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Contenedor principal para la funcionalidad */
+div {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+}
+
+/* Campos de entrada */
+input[type="text"] {
+    background-color: transparent;
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    margin: 5px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    color: var(--color-text);
+    text-align: center;
+    border-radius: 3px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 5px rgba(165, 42, 42, 0.5);
+}
+
+/* Botón de acción */
+button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    padding: 10px 20px;
+    margin-top: 10px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8B2323; /* Tono de rojo más oscuro al pasar el mouse */
+}
+
+/* Estilo para los resultados y explicaciones */
+#print, #explicacion {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+    line-height: 1.5;
+}

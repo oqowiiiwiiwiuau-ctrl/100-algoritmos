@@ -1,0 +1,92 @@
+/* Paleta y fuentes para un look monocromático de Game Boy */
+:root {
+    --color-bg-light: #C0C0C0; /* Gris claro, el color de fondo de la pantalla */
+    --color-text-dark: #303030; /* Gris oscuro, el color del texto y elementos */
+    --font-terminal: 'Courier New', Courier, monospace; /* Fuente monoespaciada */
+}
+
+/* El cuerpo es la pantalla, con un borde para simular el plástico de la consola */
+body {
+    background-color: var(--color-bg-light);
+    color: var(--color-text-dark);
+    font-family: var(--font-terminal);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    border: 10px solid var(--color-text-dark); /* Borde grueso para el efecto de consola */
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+h1, h2, h3 {
+    font-weight: normal;
+    text-align: center;
+    margin: 5px 0;
+}
+
+h1 {
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+h2 {
+    font-size: 1.2em;
+}
+
+/* El contenedor principal simula una sección de la interfaz */
+div {
+    border: 2px solid var(--color-text-dark);
+    padding: 10px;
+    margin-top: 15px;
+    background-color: #A0A0A0; /* Un gris intermedio para los bloques de contenido */
+}
+
+/* Inputs y botones con la estética de una máquina de escribir antigua */
+input[type="text"] {
+    background-color: transparent;
+    border: 1px solid var(--color-text-dark);
+    color: var(--color-text-dark);
+    padding: 8px;
+    margin: 5px;
+    outline: none;
+    font-family: var(--font-terminal);
+}
+
+input[type="text"]:focus {
+    background-color: var(--color-text-dark);
+    color: var(--color-bg-light);
+}
+
+button {
+    background-color: var(--color-text-dark);
+    border: none;
+    color: var(--color-bg-light);
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    font-family: var(--font-terminal);
+    transition: transform 0.1s ease-in-out;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 2px 0 var(--color-text-dark);
+}
+
+/* Estilo para el texto de sugerencia */
+::placeholder {
+    color: #808080;
+    opacity: 1;
+}
+
+/* Estilo para el resultado de la suma */
+#print, #explicacion {
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+    padding: 5px;
+    border: 1px dashed var(--color-text-dark);
+}
