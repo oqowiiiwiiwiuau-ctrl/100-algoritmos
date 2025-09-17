@@ -105,4 +105,10 @@ footer hr {
 
 footer ul {
     list-style-type: '• ';
-    padding-left: 
+    padding-left: 20px;
+}
+
+footer li {
+    font-style: italic;
+    margin-bottom: 8px;
+}
