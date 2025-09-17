@@ -112,3 +112,7 @@ footer li {
     font-style: italic;
     margin-bottom: 8px;
 }
+.crush::after {
+  content: " ❤️";
+  color: red;  /* Aquí pones el color que quieras */
+}

@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Russo+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=PT+Serif&display=swap');
+
+:root {
+    --color-bg: #F2E8D5;         /* Tono papel antiguo */
+    --color-text: #222222;       /* Negro profundo */
+    --color-accent: #C40233;     /* Rojo soviético */
+    --color-border: #8B0000;     /* Rojo oscuro */
+
+    --font-heading: 'Russo One', sans-serif;
+    --font-body: 'PT Serif', serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3em;
+    color: var(--color-accent);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border-bottom: 4px solid var(--color-border);
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+}
+
+/* Subtítulos */
+h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 1.6em;
+    color: var(--color-border);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/* Contenedor principal */
+div {
+    background-color: #fff;
+    border: 2px solid var(--color-border);
+    padding: 25px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    max-width: 700px;
+}
+
+/* Campos de entrada */
+input[type="text"] {
+    background-color: #f7f7f7;
+    border: 2px solid var(--color-border);
+    padding: 10px;
+    margin: 8px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    text-align: center;
+    border-radius: 2px;
+    width: 80%;
+}
+
+/* Focus */
+input[type="text"]:focus {
+    border-color: var(--color-accent);
+    outline: none;
+    box-shadow: 0 0 5px rgba(196, 2, 51, 0.5);
+}
+
+/* Botón */
+button {
+    background-color: var(--color-accent);
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-family: var(--font-heading);
+    text-transform: uppercase;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8B0000;
+}
+
+/* Resultados */
+#print, #print2, #print3 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+}

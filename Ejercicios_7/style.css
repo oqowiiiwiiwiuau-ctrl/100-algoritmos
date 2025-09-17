@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Zhi+Mang+Xing&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+
+:root {
+    --color-bg: #FAF3E0;         /* Beige papel washi */
+    --color-text: #2E2E2E;       /* Tinta negra */
+    --color-accent: #B22222;     /* Rojo sello hanko */
+    --color-border: #E0D8C3;     /* Gris muy claro, como papel viejo */
+
+    --font-heading: 'Zhi Mang Xing', cursive;
+    --font-body: 'Noto Serif JP', serif;
+}
+
+body {
+    background-color: var(--color-bg);
+    color: var(--color-text);
+    font-family: var(--font-body);
+    margin: 0;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Título principal */
+h1 {
+    font-family: var(--font-heading);
+    font-size: 3.5em;
+    color: var(--color-accent);
+    text-align: center;
+    border-bottom: 2px dashed var(--color-border);
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+/* Subtítulos */
+h2, h3 {
+    font-family: var(--font-heading);
+    font-size: 1.8em;
+    font-weight: 400;
+    text-align: center;
+    color: var(--color-accent);
+    margin-top: 20px;
+}
+
+/* Contenedor principal */
+div {
+    background-color: rgba(255, 255, 255, 0.6);
+    border: 1px solid var(--color-border);
+    padding: 20px 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 12px rgba(0,0,0,0.08);
+    max-width: 700px;
+}
+
+/* Entrada */
+input[type="text"] {
+    background-color: #fffaf0;
+    border: 1px solid var(--color-border);
+    padding: 10px;
+    margin: 8px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    color: var(--color-text);
+    text-align: center;
+    border-radius: 5px;
+    width: 80%;
+}
+
+/* Enfoque */
+input[type="text"]:focus {
+    border-color: var(--color-accent);
+    box-shadow: 0 0 6px rgba(178, 34, 34, 0.4);
+}
+
+/* Botón */
+button {
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    border: none;
+    padding: 12px 24px;
+    margin-top: 12px;
+    font-family: var(--font-body);
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8B1A1A;
+}
+
+/* Resultado */
+#print, #print2, #print3 {
+    font-size: 1.1em;
+    text-align: center;
+    margin-top: 20px;
+}
